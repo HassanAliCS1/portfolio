@@ -6,12 +6,11 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 
-
 function App() {
   return (
     <>
       <Routes>
-      <Route path="/portfolio/" element={<Layout />}>
+        <Route path="/portfolio/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/portfolio/about" element={<About />} />
           <Route path="/portfolio/contact" element={<Contact />} />
@@ -19,7 +18,7 @@ function App() {
         </Route>
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

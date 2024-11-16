@@ -18,10 +18,10 @@ const About = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000);
-  
-    return () => clearTimeout(timer); 
-  }, []);
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
@@ -45,7 +45,7 @@ const About = () => {
           </p>
           <p>
             If I need to define myself in one sentence that would be a family
-            person, hard wokring, a sports fanatic, chess enthusiast, and 
+            person, hard wokring, a sports fanatic, chess enthusiast, and
             tech-obsessed!!!
           </p>
         </div>
@@ -72,7 +72,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        
       </div>
       <Loader type="pacman" />
     </>

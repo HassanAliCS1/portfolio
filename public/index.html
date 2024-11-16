@@ -5,10 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="Hassan Ali"
-      content="My portfolio website"
-    />
+    <meta name="Hassan Ali" content="My portfolio website" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-s.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -40,19 +37,20 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!-- emailjs -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function(){
-        var emailJsPublicKey = process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY;
-        
+      ;(function () {
+        var emailJsPublicKey = process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY
+
         if (emailJsPublicKey) {
-          emailjs.init(emailJsPublicKey);
+          emailjs.init(emailJsPublicKey)
         } else {
-          console.error('EmailJS Public Key is missing!');
+          console.error('EmailJS Public Key is missing!')
         }
-      })();
+      })()
     </script>
   </body>
 </html>

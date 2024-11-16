@@ -1,16 +1,12 @@
-
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from '@tsparticles/react'
+import { useEffect, useMemo, useState } from 'react'
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from '@tsparticles/slim' // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-
-
 const ParticlesComponent = (props) => {
-
-  const [init, setInit] = useState(false);
+  const [init, setInit] = useState(false)
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -19,23 +15,22 @@ const ParticlesComponent = (props) => {
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadAll(engine);
       //await loadFull(engine);
-      await loadSlim(engine);
+      await loadSlim(engine)
       //await loadBasic(engine);
     }).then(() => {
-      setInit(true);
-    });
-  }, []);
+      setInit(true)
+    })
+  }, [])
 
   const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
+    console.log(container)
+  }
 
   const options = useMemo(
     () => ({
       background: {
         color: {
-          value: "#022c43",
+          value: '#022c43',
         },
       },
       fpsLimit: 120,
@@ -43,7 +38,7 @@ const ParticlesComponent = (props) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: 'repulse',
           },
           onHover: {
             enable: true,
@@ -62,20 +57,20 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: '#FFFFFF',
         },
         links: {
-          color: "#FFFFFF",
+          color: '#FFFFFF',
           distance: 150,
           enable: true,
           opacity: 0.3,
           width: 1,
         },
         move: {
-          direction: "none",
+          direction: 'none',
           enable: true,
           outModes: {
-            default: "bounce",
+            default: 'bounce',
           },
           random: true,
           speed: 1,
@@ -91,7 +86,7 @@ const ParticlesComponent = (props) => {
           value: 1.0,
         },
         shape: {
-          type: "circle",
+          type: 'circle',
         },
         size: {
           value: { min: 1, max: 3 },
@@ -99,11 +94,10 @@ const ParticlesComponent = (props) => {
       },
       detectRetina: true,
     }),
-    [],
-  );
+    []
+  )
 
+  return <Particles id={props.id} init={particlesLoaded} options={options} />
+}
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
-};
-
-export default ParticlesComponent;
+export default ParticlesComponent

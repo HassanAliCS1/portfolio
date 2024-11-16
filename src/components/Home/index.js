@@ -35,10 +35,10 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000);
-  
-    return () => clearTimeout(timer); 
-  }, []);
+    }, 4000)
+
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
@@ -50,10 +50,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="H"
-            />
+            <img src={LogoTitle} alt="H" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -73,7 +70,6 @@ const Home = () => {
         </div>
         <Logo />
       </div>
-
     </>
   )
 }
