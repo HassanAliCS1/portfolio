@@ -35,13 +35,27 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious software engineer looking for a role in an
-            established company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          Hi, my name is Hassan, a final-year Computer Science student with a strong passion for software development 
+          and problem-solving. Over the years, I have honed my technical skills through hands-on experience and 
+          a year-long placement at DailyPay, where I contributed to backend development, bug fixes, and feature 
+          implementation. My expertise lies in Java, Spring Boot, React, and deployment automation using CI/CD pipelines 
+          and tools like Terraform. I take pride in building robust, efficient systems that deliver value to users, 
+          and I am always eager to learn and grow in the field of software engineering.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving myself one problem at a time.
+          Beyond academics and work experience, I have developed a range of personal projects, currently working on a Quran Tester 
+          application and a physiotherapy platform tailored to individual recovery processes. These projects reflect 
+          my ability to take an idea from concept to execution, combining technical know-how with user-focused design. 
+          I also created an A-level revision website and a Django-based blog platform, which taught me the importance 
+          of scalable architecture and intuitive interfaces. With a keen interest in system design, I am constantly exploring 
+          best practices and debating complex concepts like exception handling to refine my approach.
+          </p>
+          <p>
+          Outside of the tech world, I am a competitive athlete in Brazilian Jiu-Jitsu and wrestling, recently placing 3rd at 
+          the Sheffield Pro competition. I also played Division 2 basketball for the Birmingham Bucks, achieving second place 
+          in regionals. My leadership experiences, such as raising £8K for a sand dam in Somalia as president of my universitys 
+          Somali Society, highlight my dedication, teamwork, and ability to balance multiple responsibilities. Whether it is on the 
+          mat, the court, or behind a computer, I strive to meet challenges with determination and a collaborative spirit.
           </p>
           <p>
             If I need to define myself in one sentence that would be a family
